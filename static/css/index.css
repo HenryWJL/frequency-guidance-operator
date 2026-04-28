@@ -47,7 +47,7 @@ body {
 /* This targets the title */
 .publication-title {
     /* 1. Add gradient colors */
-    background: linear-gradient(45deg, #ffcc33, #ffb347, #f39c12);
+    background: linear-gradient(45deg, #ffcc33, #ffb347, #f39c12, #F27100);
     
     /* 2. Standard clipping */
     background-clip: text;
@@ -77,7 +77,7 @@ body {
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
     /* color: #e67e22 !important; */
-    /* color: #8E44AD !important; */
+    color: #183636 !important;
 }
 
 /* This targets the superscripts above the authors (e.g., 1, 2) */
@@ -85,13 +85,9 @@ body {
     color: #f39c12;
 }
 
-/* This targets the clickable names (e.g., Junlin Wang) */
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+   color: #183636 !important;
 }
-/* .publication-authors a {
-   color: #8E44AD !important;
-} */
 
 /* This adds a nice effect when you hover over the names */
 .publication-authors a:hover {
