@@ -2,10 +2,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-
+/* 1. MODIFY: Footer icon color */
 .footer .icon-link {
     font-size: 25px;
-    color: #000;
+    color: #e67e22; /* Changed from #000 to Carrot Orange */
 }
 
 .link-block a {
@@ -17,7 +17,6 @@ body {
   font-variant: small-caps;
 }
 
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -27,13 +26,12 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
-
 .publication-title {
+  font-family: 'Google Sans', sans-serif;
 }
 
 .publication-banner {
   max-height: parent;
-
 }
 
 .publication-banner video {
@@ -47,46 +45,36 @@ body {
 .publication-header .hero-body {
 }
 
-.publication-title {
-    font-family: 'Google Sans', sans-serif;
-}
-
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
 }
 
 .publication-venue {
-    color: #555;
+    color: #d35400; /* Changed to Pumpkin Orange for high readability */
     width: fit-content;
     font-weight: bold;
 }
 
+/* 2. MODIFY: Awards color (The red text that often says "Oral" or "Best Paper") */
 .publication-awards {
-    color: #ff3860;
+    color: #f39c12; /* Changed from #ff3860 (red) to vibrant orange */
     width: fit-content;
     font-weight: bolder;
 }
 
-.publication-authors {
-}
-
+/* 3. MODIFY: Author links */
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+   /* Changed from blue HSL(204...) to Orange HSL(28, 80%, 45%) */
+   color: hsl(28, 80%, 45%) !important; 
 }
 
 .publication-authors a:hover {
     text-decoration: underline;
+    color: #e67e22 !important; /* Brighter orange on hover */
 }
 
 .author-block {
   display: inline-block;
-}
-
-.publication-banner img {
-}
-
-.publication-authors {
-  /*color: #4286f4;*/
 }
 
 .publication-video {
@@ -94,7 +82,6 @@ body {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-
     overflow: hidden;
     border-radius: 10px !important;
 }
@@ -107,17 +94,15 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
-
 .results-carousel {
   overflow: hidden;
 }
 
+/* 4. MODIFY: Carousel border */
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 1px solid #bbb;
+  border: 2px solid #f39c12; /* Added orange border to highlight results */
   border-radius: 10px;
   padding: 0;
   font-size: 0;
@@ -127,26 +112,14 @@ body {
   margin: 0;
 }
 
-
 .interpolation-panel {
-  background: #f5f5f5;
+  background: #fff5e6; /* Changed from gray to a very soft orange-cream */
   border-radius: 10px;
 }
 
 .interpolation-panel .interpolation-image {
   width: 100%;
   border-radius: 5px;
-}
-
-.interpolation-video-column {
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
 }
 
 #interpolation-image-wrapper {
