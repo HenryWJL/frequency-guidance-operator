@@ -2,10 +2,9 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* 1. MODIFY: Footer icon color */
 .footer .icon-link {
     font-size: 25px;
-    color: #e67e22; /* Changed from #000 to Carrot Orange */
+    color: #e67e22;
 }
 
 .link-block a {
@@ -26,6 +25,7 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+/* This targets the title */
 .publication-title {
   font-family: 'Google Sans', sans-serif;
   color: #f39c12;
@@ -47,34 +47,37 @@ body {
 .publication-header .hero-body {
 }
 
+/* This targets the author and university names (e.g., Junlin Wang) */
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
     color: #e67e22 !important;
 }
 
+/* This targets the superscripts above the authors (e.g., 1, 2) */
 .publication-authors sup {
     color: #f39c12;
 }
 
 .publication-venue {
-    color: #d35400; /* Changed to Pumpkin Orange for high readability */
+    color: #d35400;
     width: fit-content;
     font-weight: bold;
 }
 
-/* 2. MODIFY: Awards color (The red text that often says "Oral" or "Best Paper") */
+/* This targets the awards color (e.g., "Oral" or "Best Paper") */
 .publication-awards {
-    color: #f39c12; /* Changed from #ff3860 (red) to vibrant orange */
+    color: #f39c12;
     width: fit-content;
     font-weight: bolder;
 }
 
-/* 3. MODIFY: Author links */
+/* This targets the clickable names (e.g., Junlin Wang) */
 .publication-authors a {
    /* Changed from blue HSL(204...) to Orange HSL(28, 80%, 45%) */
    color: hsl(28, 80%, 45%) !important; 
 }
 
+/* This adds a nice effect when you hover over the names */
 .publication-authors a:hover {
     text-decoration: underline;
     color: #e67e22 !important; /* Brighter orange on hover */
