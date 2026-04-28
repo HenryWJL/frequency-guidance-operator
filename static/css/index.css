@@ -85,7 +85,7 @@ body {
 /* This targets the author and university names (e.g., Junlin Wang) */
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
-    color: #e67e22 !important;
+    /* color: #e67e22 !important; */
 }
 
 /* This targets the superscripts above the authors (e.g., 1, 2) */
@@ -93,13 +93,14 @@ body {
     color: #f39c12;
 }
 
+/* This targets the conference name (e.g., CoRL) */
 .publication-venue {
     color: #d35400;
     width: fit-content;
     font-weight: bold;
 }
 
-/* This targets the awards color (e.g., "Oral" or "Best Paper") */
+/* This targets the awards (e.g., "Oral" or "Best Paper") */
 .publication-awards {
     color: #f39c12;
     width: fit-content;
