@@ -27,9 +27,9 @@ body {
 
 /* Target the specific button link blocks */
 .link-block a.button.is-dark {
-    background-color: #0A0A0A !important;
+    background-color: #8DA6D2 !important;
     border-color: transparent !important;
-    color: #ffffff !important;
+    color: #F9D77C !important;
     transition: background-color 0.3s ease;
 }
 
