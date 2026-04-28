@@ -27,15 +27,15 @@ body {
 
 /* Target the specific button link blocks */
 .link-block a.button.is-dark {
-    background-color: #e67e22 !important; /* Carrot Orange */
+    background-color: #0A0A0A !important;
     border-color: transparent !important;
-    color: #ffffff !important; /* White text/icon */
+    color: #FF9900 !important;
     transition: background-color 0.3s ease;
 }
 
 /* Change color when you hover over the button */
 .link-block a.button.is-dark:hover {
-    background-color: #d35400 !important; /* Deeper Pumpkin Orange on hover */
+    background-color: #d35400 !important;
     color: #ffffff !important;
 }
 
