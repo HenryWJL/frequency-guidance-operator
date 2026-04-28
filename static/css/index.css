@@ -46,10 +46,26 @@ body {
 
 /* This targets the title */
 .publication-title {
+    /* 1. Define the gradient (Linear from left to right) */
+    background: linear-gradient(to right, #f39c12, #d35400);
+    
+    /* 2. Clip the background to the text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* 3. Ensure it works on all browsers */
+    background-clip: text;
+    text-fill-color: transparent;
+    
+    /* 4. Optional: Add some weight to make the gradient more visible */
+    font-weight: 700;
+}
+/* .publication-title {
   font-family: 'Google Sans', sans-serif;
   color: #f39c12;
   
-}
+} */
+
 
 .publication-banner {
   max-height: parent;
