@@ -47,7 +47,7 @@ body {
 /* This targets the title */
 .publication-title {
     /* 1. Define the gradient (Linear from left to right) */
-    background: linear-gradient(45deg, #ffcc33, #ffb347, #f39c12)
+    background: linear-gradient(45deg, #ffcc33, #ffb347, #f39c12);
     
     /* 2. Clip the background to the text */
     -webkit-background-clip: text;
@@ -109,7 +109,6 @@ body {
 
 /* This targets the clickable names (e.g., Junlin Wang) */
 .publication-authors a {
-   /* Changed from blue HSL(204...) to Orange HSL(28, 80%, 45%) */
    color: hsl(28, 80%, 45%) !important; 
 }
 
