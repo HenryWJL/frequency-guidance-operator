@@ -29,7 +29,7 @@ body {
 .link-block a.button.is-dark {
     background-color: #0A0A0A !important;
     border-color: transparent !important;
-    color: #FF9900 !important;
+    color: #ffffff !important;
     transition: background-color 0.3s ease;
 }
 
