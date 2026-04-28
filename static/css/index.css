@@ -28,6 +28,8 @@ body {
 
 .publication-title {
   font-family: 'Google Sans', sans-serif;
+  color: #f39c12;
+  
 }
 
 .publication-banner {
@@ -47,6 +49,11 @@ body {
 
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
+    color: #e67e22 !important;
+}
+
+.publication-authors sup {
+    color: #f39c12;
 }
 
 .publication-venue {
