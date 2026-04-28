@@ -7,6 +7,19 @@ body {
     color: #e67e22;
 }
 
+.dnerf {
+  font-variant: small-caps;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
 .link-block a {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -31,33 +44,21 @@ body {
     color: #ffffff !important;
 }
 
-.dnerf {
-  font-variant: small-caps;
-}
-
-.teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 3rem;
-}
-
-.teaser {
-  font-family: 'Google Sans', sans-serif;
-}
-
 /* This targets the title */
 .publication-title {
-    /* 1. Define the gradient (Linear from left to right) */
+    /* 1. Added the missing semicolon here! */
     background: linear-gradient(45deg, #ffcc33, #ffb347, #f39c12);
     
-    /* 2. Clip the background to the text */
+    /* 2. Standard clipping (Put this first) */
+    background-clip: text;
     -webkit-background-clip: text;
+
+    /* 3. Text fill (This makes the text itself clear) */
+    text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     
-    /* 3. Ensure it works on all browsers */
-    background-clip: text;
-    text-fill-color: transparent;
-    
-    /* 4. Optional: Add some weight to make the gradient more visible */
+    /* 4. Ensures the background spans the title area */
+    display: block;
     font-weight: 700;
 }
 /* .publication-title {
@@ -66,21 +67,6 @@ body {
   
 } */
 
-
-.publication-banner {
-  max-height: parent;
-}
-
-.publication-banner video {
-  position: relative;
-  left: auto;
-  top: auto;
-  transform: none;
-  object-fit: fit;
-}
-
-.publication-header .hero-body {
-}
 
 /* This targets the author and university names (e.g., Junlin Wang) */
 .publication-authors {
@@ -91,6 +77,21 @@ body {
 /* This targets the superscripts above the authors (e.g., 1, 2) */
 .publication-authors sup {
     color: #f39c12;
+}
+
+/* This targets the clickable names (e.g., Junlin Wang) */
+.publication-authors a {
+   color: hsl(28, 80%, 45%) !important; 
+}
+
+/* This adds a nice effect when you hover over the names */
+.publication-authors a:hover {
+    text-decoration: underline;
+    color: #e67e22 !important; /* Brighter orange on hover */
+}
+
+.author-block {
+  display: inline-block;
 }
 
 /* This targets the conference name (e.g., CoRL) */
@@ -107,19 +108,21 @@ body {
     font-weight: bolder;
 }
 
-/* This targets the clickable names (e.g., Junlin Wang) */
-.publication-authors a {
-   color: hsl(28, 80%, 45%) !important; 
+
+
+.publication-banner {
+  max-height: parent;
 }
 
-/* This adds a nice effect when you hover over the names */
-.publication-authors a:hover {
-    text-decoration: underline;
-    color: #e67e22 !important; /* Brighter orange on hover */
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
 }
 
-.author-block {
-  display: inline-block;
+.publication-header .hero-body {
 }
 
 .publication-video {
