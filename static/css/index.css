@@ -47,7 +47,7 @@ body {
 /* This targets the title */
 .publication-title {
     /* 1. Define the gradient (Linear from left to right) */
-    background: linear-gradient(to right, #f39c12, #d35400);
+    background: linear-gradient(to bottom, #f39c12, #e67e22)
     
     /* 2. Clip the background to the text */
     -webkit-background-clip: text;
