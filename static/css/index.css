@@ -46,10 +46,10 @@ body {
 
 /* This targets the title */
 .publication-title {
-    /* 1. Added the missing semicolon here! */
+    /* 1. Add gradient colors */
     background: linear-gradient(45deg, #ffcc33, #ffb347, #f39c12);
     
-    /* 2. Standard clipping (Put this first) */
+    /* 2. Standard clipping */
     background-clip: text;
     -webkit-background-clip: text;
 
@@ -58,6 +58,8 @@ body {
     -webkit-text-fill-color: transparent;
     
     /* 4. Ensures the background spans the title area */
+    line-height: 1.25; 
+    padding-bottom: 0.1em;
     display: block;
     font-weight: 700;
 }
