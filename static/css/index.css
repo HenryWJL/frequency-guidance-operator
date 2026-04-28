@@ -77,7 +77,7 @@ body {
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
     /* color: #e67e22 !important; */
-    color: #183636 !important;
+    color: #018B8D !important;
 }
 
 /* This targets the superscripts above the authors (e.g., 1, 2) */
@@ -86,7 +86,7 @@ body {
 }
 
 .publication-authors a {
-   color: #183636 !important;
+   color: #018B8D !important;
 }
 
 /* This adds a nice effect when you hover over the names */
