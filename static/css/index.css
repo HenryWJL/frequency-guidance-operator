@@ -276,37 +276,78 @@ body {
 }
 
 /* This targets the tables */
+/* 1. Fix Numerical Alignment */
+.numeric-cell {
+    font-family: 'Courier New', Courier, monospace; /* Or any Monospaced font for perfect alignment */
+    font-variant-numeric: tabular-nums;
+    text-align: center !important;
+    white-space: nowrap;
+}
+
+/* 2. Style the Table to match your screenshot */
 .academic-table {
+    background-color: #fdfcf0 !important;
+    border-top: 4px solid #183636 !important;    /* Dark teal from SUSTech logo */
+    border-bottom: 4px solid #183636 !important;
+}
+
+.academic-table th {
+    color: #183636 !important;
+    font-weight: 700;
+}
+
+.border-bottom-thin {
+    border-bottom: 1px solid #183636 !important;
+}
+
+/* 3. Make Caption Larger and Match Font */
+.table-caption-large {
+    margin-top: 1.5rem;
+    font-size: 1.1rem; /* Much larger than is-size-7 */
+    color: #465E87;    /* The Penn-style blue */
+    line-height: 1.5;
+}
+
+/* 4. The "Ours" Row Highlight from your image */
+.fgo-highlight {
+    background-color: #f7e8d7 !important; /* The soft peach color from your screenshot */
+}
+
+.fgo-highlight td {
+    color: #183636 !important; /* Keep text dark for contrast */
+}
+
+/* .academic-table {
     background-color: #fdfcf0 !important;
     border-top: 3px solid #183E3E !important;
     border-bottom: 3px solid #183E3E !important;
     font-family: 'Serif', 'Times New Roman', serif;
-}
+} */
 
-.academic-table thead th {
+/* .academic-table thead th {
     border-bottom: 1.5px solid #183E3E !important;
     background-color: #fdfcf0 !important;
     color: #183E3E !important;
-}
+} */
 
-.academic-table td, .academic-table th {
+/* .academic-table td, .academic-table th {
     background-color: transparent !important;
     padding: 10px 4px !important;
     text-align: center;
-}
+} */
 
-.fgo-highlight {
+/* .fgo-highlight {
     background-color: rgba(242, 113, 0, 0.15) !important;
-}
+} */
 
-.fgo-highlight td {
+/* .fgo-highlight td {
     color: #F27100 !important;
-}
+} */
 
-.table-caption {
+/* .table-caption {
     margin-top: 1rem;
     color: #8DA6D2;
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
-}
+} */
