@@ -156,6 +156,10 @@ body {
     line-height: 1.5;        /* Improves readability for long captions */
 }
 
+.subtitle {
+    color: #e7c579 !important; 
+}
+
 .results-carousel {
   overflow: hidden;
 }
