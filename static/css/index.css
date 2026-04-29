@@ -73,27 +73,27 @@ body {
   
 } */
 
-
-/* This targets the author and university names (e.g., Junlin Wang) */
-.publication-authors {
-    font-family: 'Google Sans', sans-serif;
-    color: #5A3D21 !important;
-    /* color: #e7c579 !important; */
-}
-
-/* This targets the superscripts above the authors (e.g., 1, 2) */
-.publication-authors sup {
-    color: #e7c579;
-}
-
+/* This targets the author names */
 .publication-authors a {
-   color: #CAB49F !important;
+   color: # !important;
 }
 
 /* This adds a nice effect when you hover over the names */
 .publication-authors a:hover {
     text-decoration: underline;
     color: #e67e22 !important;
+}
+
+/* This targets the university names (e.g., UPenn) */
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+    color: #f3bb66 !important;
+    /* color: #e7c579 !important; */
+}
+
+/* This targets the superscripts above the authors (e.g., 1, 2) */
+.publication-authors sup {
+    color: #e7c579;
 }
 
 .author-block {
