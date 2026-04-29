@@ -1,5 +1,6 @@
 body {
-  font-family: 'Noto Sans', sans-serif;
+  /* font-family: 'Noto Sans', sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
   background-color: #fdfcf0 !important;
   margin: 0;
   padding: 0;
@@ -276,12 +277,11 @@ body {
 }
 
 /* This targets the tables */
-/* Table Base Styling */
 .academic-table {
     background-color: #fdfcf0 !important;
     color: #183636 !important;
     border-bottom: 3px solid #183636 !important;
-    font-family: 'Times New Roman', Times, serif; /* Pure Academic Feel */
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 0 !important;
 }
 
@@ -328,9 +328,9 @@ body {
     padding-left: 5px;
 }
 
-/* Row Highlight (Matching your Image) */
+/* Row Highlight */
 .fgo-row-highlight {
-    background-color: #f7e8d7 !important; /* Soft peach/orange highlight */
+    background-color: #f7e8d7 !important;
 }
 
 .fgo-row-highlight td {
@@ -341,44 +341,9 @@ body {
 /* Caption Styling */
 .table-caption-final {
     margin-top: 1.5rem;
-    font-size: 1.1rem !important; /* Larger font size as requested */
-    color: #465E87; /* Muted blue for professional look */
+    font-size: 1.1rem !important;
+    color: #465E87;
     text-align: center;
     line-height: 1.5;
     padding: 0 5%;
 }
-
-/* .academic-table {
-    background-color: #fdfcf0 !important;
-    border-top: 3px solid #183E3E !important;
-    border-bottom: 3px solid #183E3E !important;
-    font-family: 'Serif', 'Times New Roman', serif;
-} */
-
-/* .academic-table thead th {
-    border-bottom: 1.5px solid #183E3E !important;
-    background-color: #fdfcf0 !important;
-    color: #183E3E !important;
-} */
-
-/* .academic-table td, .academic-table th {
-    background-color: transparent !important;
-    padding: 10px 4px !important;
-    text-align: center;
-} */
-
-/* .fgo-highlight {
-    background-color: rgba(242, 113, 0, 0.15) !important;
-} */
-
-/* .fgo-highlight td {
-    color: #F27100 !important;
-} */
-
-/* .table-caption {
-    margin-top: 1rem;
-    color: #8DA6D2;
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-} */
