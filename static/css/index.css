@@ -1,6 +1,6 @@
 body {
-  /* font-family: 'Noto Sans', sans-serif; */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Noto Sans', sans-serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   background-color: #fdfcf0 !important;
   margin: 0;
   padding: 0;
@@ -304,28 +304,36 @@ body {
     text-align: left !important;
 }
 
-/* Perfect Numeric Alignment Logic */
-.numeric-cell {
-    text-align: center !important;
-}
-
+/* Perfect Alignment Grid */
 .num-wrapper {
     display: inline-flex;
     justify-content: center;
     width: 100%;
+    /* Use a Monospace font to ensure '8' is the same width as '1' */
+    font-family: 'Courier New', Courier, monospace; 
     font-variant-numeric: tabular-nums;
-    font-family: 'Courier New', Courier, monospace; /* Ensures digit width consistency */
+    font-size: 0.95rem;
 }
 
+/* THE FIX: Fixed width based on characters (ch) */
 .m {
+    display: inline-block;
     text-align: right;
-    min-width: 3.2ch; /* Forces the anchor point */
+    /* 5ch fits '100.0'. Even if the number is '9.2', it will take up '100.0' space */
+    min-width: 5ch; 
 }
 
 .d {
+    display: inline-block;
     text-align: left;
-    min-width: 5.5ch;
-    padding-left: 5px;
+    /* 6ch fits '± 0.0 ' */
+    min-width: 6ch;
+    padding-left: 2px;
+}
+
+/* Ensure bolding doesn't expand the width */
+.fgo-row-highlight strong {
+    font-weight: 700;
 }
 
 /* Row Highlight */
