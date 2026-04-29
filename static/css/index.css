@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+.section, .hero, .footer {
+    background-color: transparent !important;
+}
+
 .footer .icon-link {
     font-size: 25px;
     color: #e67e22;
