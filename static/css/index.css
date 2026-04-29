@@ -77,17 +77,17 @@ body {
 /* This targets the author and university names (e.g., Junlin Wang) */
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
-    /* color: #e67e22 !important; */
-    color: #e7c579 !important;
+    color: #5A3D21 !important;
+    /* color: #e7c579 !important; */
 }
 
 /* This targets the superscripts above the authors (e.g., 1, 2) */
 .publication-authors sup {
-    color: #f39c12;
+    color: #e7c579;
 }
 
 .publication-authors a {
-   color: #e7c579 !important;
+   color: #CAB49F !important;
 }
 
 /* This adds a nice effect when you hover over the names */
