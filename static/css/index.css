@@ -177,6 +177,27 @@ body {
 }
 
 /* This targets the carousel border */
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+
+  /* 1. Create a transparent border to make space for the gradient */
+  border: 2px solid transparent;
+
+  /* 2. Apply a double background: 
+     - The first is the inner background (white)
+     - The second is the gradient background (orange to sunrise) 
+  */
+  background-image: linear-gradient(#fdfcf0, #fdfcf0), 
+                    linear-gradient(45deg, #F27100, #ffb347);
+  
+  /* 3. Clip the first background to the content and the second to the border */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
 /* .results-carousel .item {
   margin: 5px;
   overflow: hidden;
