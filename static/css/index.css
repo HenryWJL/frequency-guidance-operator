@@ -276,45 +276,76 @@ body {
 }
 
 /* This targets the tables */
-/* 1. Fix Numerical Alignment */
-.numeric-cell {
-    font-family: 'Courier New', Courier, monospace; /* Or any Monospaced font for perfect alignment */
-    font-variant-numeric: tabular-nums;
-    text-align: center !important;
-    white-space: nowrap;
-}
-
-/* 2. Style the Table to match your screenshot */
+/* Table Base Styling */
 .academic-table {
     background-color: #fdfcf0 !important;
-    border-top: 4px solid #183636 !important;    /* Dark teal from SUSTech logo */
-    border-bottom: 4px solid #183636 !important;
+    color: #183636 !important;
+    border-bottom: 3px solid #183636 !important;
+    font-family: 'Times New Roman', Times, serif; /* Pure Academic Feel */
+    margin-bottom: 0 !important;
+}
+
+.top-border {
+    border-top: 3px solid #183636 !important;
 }
 
 .academic-table th {
+    background-color: #fdfcf0 !important;
     color: #183636 !important;
     font-weight: 700;
+    vertical-align: middle !important;
 }
 
-.border-bottom-thin {
+.header-group-line {
     border-bottom: 1px solid #183636 !important;
 }
 
-/* 3. Make Caption Larger and Match Font */
-.table-caption-large {
+.left-align-header, .left-align-cell {
+    text-align: left !important;
+}
+
+/* Perfect Numeric Alignment Logic */
+.numeric-cell {
+    text-align: center !important;
+}
+
+.num-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    font-variant-numeric: tabular-nums;
+    font-family: 'Courier New', Courier, monospace; /* Ensures digit width consistency */
+}
+
+.m {
+    text-align: right;
+    min-width: 3.2ch; /* Forces the anchor point */
+}
+
+.d {
+    text-align: left;
+    min-width: 5.5ch;
+    padding-left: 5px;
+}
+
+/* Row Highlight (Matching your Image) */
+.fgo-row-highlight {
+    background-color: #f7e8d7 !important; /* Soft peach/orange highlight */
+}
+
+.fgo-row-highlight td {
+    border-top: 1px solid #18363633;
+    border-bottom: 1px solid #18363633;
+}
+
+/* Caption Styling */
+.table-caption-final {
     margin-top: 1.5rem;
-    font-size: 1.1rem; /* Much larger than is-size-7 */
-    color: #465E87;    /* The Penn-style blue */
+    font-size: 1.1rem !important; /* Larger font size as requested */
+    color: #465E87; /* Muted blue for professional look */
+    text-align: center;
     line-height: 1.5;
-}
-
-/* 4. The "Ours" Row Highlight from your image */
-.fgo-highlight {
-    background-color: #f7e8d7 !important; /* The soft peach color from your screenshot */
-}
-
-.fgo-highlight td {
-    color: #183636 !important; /* Keep text dark for contrast */
+    padding: 0 5%;
 }
 
 /* .academic-table {
