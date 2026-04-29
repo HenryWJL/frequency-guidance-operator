@@ -279,8 +279,9 @@ body {
 /* --- Academic Table Styling --- */
 .academic-table {
     background-color: #fdfcf0 !important;
-    border-bottom: 3px solid #183636 !important;
-    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid #8DA6D2 !important;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .numeric-cell {
@@ -308,8 +309,8 @@ body {
 .d { grid-column: 3; text-align: left; padding-left: 4px; }
 
 .fgo-row-highlight { background-color: #f7e8d7 !important; }
-.top-border { border-top: 3px solid #183636 !important; }
-.header-group-line { border-bottom: 1.5px solid #183636 !important; }
+.top-border { border-top: 3px solid #8DA6D2 !important; }
+.header-group-line { border-bottom: 1.5px solid #8DA6D2 !important; }
 .left-align-cell, .left-align-header { text-align: left !important; }
 
 /* Prevents header text from wrapping/splitting into two lines */
@@ -322,6 +323,6 @@ body {
 .table-caption-final {
     margin-top: 1.5rem;
     font-size: 1.15rem !important;
-    color: #465E87;
+    color: #8DA6D2;
     text-align: center;
 }
