@@ -238,7 +238,7 @@ body {
 .results-carousel .slider-pagination .slider-page.is-active {
     background-color: #F27100 !important;
     opacity: 1.0;
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 /* This targets the carousel subcaptions */
