@@ -310,7 +310,14 @@ body {
 .fgo-row-highlight { background-color: #f7e8d7 !important; }
 .top-border { border-top: 3px solid #183636 !important; }
 .header-group-line { border-bottom: 1.5px solid #183636 !important; }
-.left-align-cell, .left-align-header { text-align: left !important; }
+.left-align-cell { text-align: left !important; }
+
+/* Prevents header text from wrapping/splitting into two lines */
+.left-align-header {
+    text-align: left !important;
+    white-space: nowrap !important;
+    padding-right: 20px !important; /* Adds a little breathing room */
+}
 
 .table-caption-final {
     margin-top: 1.5rem;
