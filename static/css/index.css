@@ -1,5 +1,8 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  background-color: #fdfcf0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 .footer .icon-link {
