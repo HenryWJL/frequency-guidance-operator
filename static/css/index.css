@@ -148,12 +148,29 @@ body {
     height: 100%;
 }
 
-.video-caption-justified {
+/* .video-caption-justified {
     text-align: justify;
     text-justify: inter-word; /* Ensures even spacing between words */
     max-width: 800px;         /* Prevents the text from stretching too wide */
     margin: 1rem auto;       /* Centers the text block itself */
     line-height: 1.5;        /* Improves readability for long captions */
+} */
+.video-caption-justified {
+    display: block !important;    /* Force it to take up the full width allowed */
+    text-align: justify !important;
+    text-justify: inter-word;
+    
+    /* These ensure the block itself is centered even if the text inside is justified */
+    max-width: 900px;             
+    margin-left: auto !important;
+    margin-right: auto !important;
+    line-height: 1.6;
+    hyphens: auto;                /* Optional: helps with justification gaps */
+}
+
+/* Bulma specific fix: ensure the subtitle doesn't fight the justification */
+h2.subtitle.video-caption-justified {
+    width: 100% !important;
 }
 
 .subtitle {
