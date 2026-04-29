@@ -29,13 +29,14 @@ body {
 .link-block a.button.is-dark {
     background-color: #8DA6D2 !important;
     border-color: transparent !important;
-    color: #F9D77C !important;
+    color: #ffffff !important;
     transition: background-color 0.3s ease;
 }
 
 /* Change color when you hover over the button */
 .link-block a.button.is-dark:hover {
-    background-color: #d35400 !important;
+    /* background-color: #d35400 !important; */
+    background-color: #6B89BC !important;
     color: #ffffff !important;
 }
 
