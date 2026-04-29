@@ -328,6 +328,79 @@
 
 
 
+<section class="section" style="background-color: #fdfcf0;">
+  <div class="container is-max-widescreen">
+    <div class="table-container">
+      <table class="table is-narrow is-fullwidth academic-table">
+        <thead>
+          <tr>
+            <th rowspan="2" style="vertical-align: middle;">Algorithms / Tasks</th>
+            <th colspan="4" class="has-text-centered">Robosuite</th>
+            <th colspan="2" class="has-text-centered">MimicGen</th>
+            <th rowspan="2" style="vertical-align: middle;" class="has-text-centered">Average</th>
+          </tr>
+          <tr>
+            <th class="has-text-centered">Lift</th>
+            <th class="has-text-centered">Stack</th>
+            <th class="has-text-centered">Can</th>
+            <th class="has-text-centered">Square</th>
+            <th class="has-text-centered">Three Piece Assembly</th>
+            <th class="has-text-centered">Stack Three</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DP3</td>
+            <td>88.7 ± 4.2</td>
+            <td>72.0 ± 2.0</td>
+            <td>64.7 ± 1.2</td>
+            <td><strong>36.7 ± 1.2</strong></td>
+            <td>35.3 ± 6.4</td>
+            <td>20.0 ± 3.5</td>
+            <td>52.9</td>
+          </tr>
+          <tr>
+            <td>DiT-Policy</td>
+            <td>90.7 ± 4.2</td>
+            <td>68.7 ± 7.6</td>
+            <td>64.7 ± 3.1</td>
+            <td>34.7 ± 2.3</td>
+            <td>37.3 ± 7.6</td>
+            <td>18.7 ± 5.0</td>
+            <td>52.5</td>
+          </tr>
+          <tr>
+            <td>FreqPolicy</td>
+            <td>89.3 ± 1.2</td>
+            <td>71.3 ± 1.2</td>
+            <td>63.3 ± 2.3</td>
+            <td>36.0 ± 3.5</td>
+            <td>27.3 ± 8.1</td>
+            <td>22.0 ± 4.0</td>
+            <td>51.5</td>
+          </tr>
+          <tr class="fgo-highlight">
+            <td><strong>FGO (Ours)</strong></td>
+            <td><strong>92.7 ± 3.1</strong></td>
+            <td><strong>79.3 ± 3.1</strong></td>
+            <td><strong>66.0 ± 0.0</strong></td>
+            <td><strong>36.7 ± 3.1</strong></td>
+            <td><strong>39.3 ± 7.0</strong></td>
+            <td><strong>25.3 ± 3.1</strong></td>
+            <td><strong>56.6</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-caption has-text-justified is-size-7">
+      <strong>Table 1:</strong> Comparison of success rates (%) on the Robosuite and MimicGen benchmarks. 
+      For each task, results are averaged over 3 training seeds and reported as (mean) ± (standard deviation).
+    </p>
+  </div>
+</section>
+
+  
+
 <section class="section" id="BibTeX">
   <div class="container is-max-widescreen content">
     <h2 class="title" style="color: #FF8F2E;">Cite our Work</h2> <pre><code>@article{wang2026fgo,
