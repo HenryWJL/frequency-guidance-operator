@@ -276,48 +276,77 @@ body {
   border-radius: 5px;
 }
 
-/* This targets the tables */
-/* Perfect Numeric Alignment with Character-Width (ch) Units */
-.num-wrapper {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font is vital */
-    font-variant-numeric: tabular-nums;
-}
-
-.m {
-    display: inline-block;
-    text-align: right;
-    min-width: 5.5ch; /* Width of '100.0'. Prevents bolding or 3-digits from breaking alignment */
-}
-
-.d {
-    display: inline-block;
-    text-align: left;
-    min-width: 6ch; /* Width of '± 0.0' */
-    padding-left: 3px;
-}
-
-/* Global Academic Styling */
+/* --- Academic Table Styling --- */
 .academic-table {
     background-color: #fdfcf0 !important;
     color: #183636 !important;
     border-bottom: 3px solid #183636 !important;
     font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0 !important;
 }
 
-.top-border { border-top: 3px solid #183636 !important; }
-.header-group-line { border-bottom: 1.5px solid #183636 !important; }
-.left-align-cell, .left-align-header { text-align: left !important; }
+.top-border {
+    border-top: 3px solid #183636 !important;
+}
 
+.academic-table th {
+    background-color: #fdfcf0 !important;
+    color: #183636 !important;
+    font-weight: 700;
+    vertical-align: middle !important;
+}
+
+.header-group-line {
+    border-bottom: 1.5px solid #183636 !important;
+}
+
+.left-align-header, .left-align-cell {
+    text-align: left !important;
+}
+
+/* --- The Perfect Alignment Grid (3-Column Fix) --- */
+.numeric-cell {
+    text-align: center !important;
+}
+
+.num-wrapper {
+    display: inline-grid;
+    /* Three columns: Mean, Plus-Minus, Deviation */
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center;
+    min-width: 13ch; /* Large enough to prevent shifting */
+    font-family: 'Courier New', Courier, monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+.m {
+    grid-column: 1;
+    justify-self: end;    /* Anchors the number to the right */
+    padding-right: 6px;   /* Exact spacing between mean and ± */
+}
+
+.pm {
+    grid-column: 2;
+    text-align: center;
+}
+
+.d {
+    grid-column: 3;
+    justify-self: start;  /* Anchors the deviation to the left */
+    padding-left: 6px;    /* Exact spacing between ± and deviation */
+}
+
+/* --- Highlight & Caption --- */
 .fgo-row-highlight {
-    background-color: #f7e8d7 !important; /* Peach/Orange highlight */
+    background-color: #f7e8d7 !important; /* Peach highlight */
 }
 
 .table-caption-final {
     margin-top: 1.5rem;
-    font-size: 1.15rem !important; /* Larger readable caption */
+    font-size: 1.15rem !important;
     color: #465E87;
     text-align: center;
+    line-height: 1.5;
+    padding: 0 5%;
 }
