@@ -148,6 +148,14 @@ body {
     height: 100%;
 }
 
+.video-caption-justified {
+    text-align: justify;
+    text-justify: inter-word; /* Ensures even spacing between words */
+    max-width: 800px;         /* Prevents the text from stretching too wide */
+    margin: 1rem auto;       /* Centers the text block itself */
+    line-height: 1.5;        /* Improves readability for long captions */
+}
+
 .results-carousel {
   overflow: hidden;
 }
