@@ -165,7 +165,7 @@ body {
 }
 
 .subtitle {
-    color: #6B89BC !important; 
+    color: #8DA6D2 !important; 
 }
 
 .results-carousel {
@@ -177,27 +177,51 @@ body {
 }
 
 /* This targets the carousel border */
-.results-carousel .item {
+/* .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 2px solid #8DA6D2;
+  border: 2px solid #F27100;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
-}
+} */
 
 /* This targets the arrow buttons on both sides */
-.glider-prev, .glider-next {
-    background-color: #183E3E !important;
+.results-carousel .slider-navigation-previous, 
+.results-carousel .slider-navigation-next {
+    background-color: rgba(24, 62, 62, 0.7) !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+/* Hover state for arrows */
+.results-carousel .slider-navigation-previous:hover, 
+.results-carousel .slider-navigation-next:hover {
+    background-color: #F27100 !important;
+    opacity: 1.0 !important;
+}
+
+/* The actual SVG icons inside the arrows */
+.results-carousel .slider-navigation-previous svg, 
+.results-carousel .slider-navigation-next svg {
+    stroke: white !important;
 }
 
 /* This targets the dots container at the bottom */
-.glider-dot.active {
-    background-color: #F27100 !important;
+.results-carousel .slider-pagination .slider-page {
+    background-color: #8DA6D2 !important;
+    opacity: 0.5;
 }
 
-/* This targets to carousel subcaptions */
-.carousel-subcaption {
+/* The active dot (the one currently being viewed) */
+.results-carousel .slider-pagination .slider-page.is-active {
+    background-color: #F27100 !important;
+    opacity: 1.0;
+    transform: scale(1.2);
+}
+
+/* This targets the carousel subcaptions */
+/* .carousel-subcaption {
     font-weight: 600;
     color: #183E3E;
     margin-bottom: 0.5rem;
@@ -206,12 +230,12 @@ body {
     /* background: #f5f5f5; */
     /* border-radius: 20px; */
     /* padding: 2px 10px; */
-}
+} */
 
-.item:hover .carousel-subcaption {
+/* .item:hover .carousel-subcaption {
     color: #F27100;
     transition: color 0.3s ease;
-}
+} */
 
 .interpolation-panel {
   background: #8DA6D2;
