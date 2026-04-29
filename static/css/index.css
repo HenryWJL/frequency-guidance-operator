@@ -279,82 +279,42 @@ body {
 /* --- Academic Table Styling --- */
 .academic-table {
     background-color: #fdfcf0 !important;
-    color: #183636 !important;
     border-bottom: 3px solid #183636 !important;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 0 !important;
 }
 
-.top-border {
-    border-top: 3px solid #183636 !important;
-}
-
-.academic-table th {
-    background-color: #fdfcf0 !important;
-    color: #183636 !important;
-    font-weight: 700;
-    vertical-align: middle !important;
-}
-
-.header-group-line {
-    border-bottom: 1.5px solid #183636 !important;
-}
-
-.left-align-header, .left-align-cell {
-    text-align: left !important;
-}
-
-/* --- The Perfect Alignment Grid (3-Column Fix) --- */
 .numeric-cell {
     text-align: center !important;
 }
 
+/* THE FIX: Fixed character-width grid */
 .num-wrapper {
     display: inline-grid;
-    /* Column widths are fixed to character counts (ch) */
-    /* This prevents bolding from expanding the container */
-    grid-template-columns: 5.5ch auto 5.5ch; 
+    grid-template-columns: 5.5ch 2ch 5.5ch; /* Rigid widths */
     align-items: center;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace; /* Essential for digit alignment */
     font-variant-numeric: tabular-nums;
     font-size: 0.95rem;
 }
 
-.m {
-    grid-column: 1;
-    text-align: right;
-    padding-right: 6px; 
-}
-
-.pm {
-    grid-column: 2;
-    text-align: center;
-    width: 2ch; /* Fixed width for the ± symbol */
-}
-
-.d {
-    grid-column: 3;
-    text-align: left;
-    padding-left: 6px;
-}
-
-/* Ensure strong text doesn't add extra width to the row */
+/* Keeps bolding from expanding the container */
 .num-wrapper strong {
-    font-weight: 700;
-    display: contents; /* Allows strong to wrap text without adding its own box model */
+    display: contents; 
 }
 
-/* --- Highlight & Caption --- */
-.fgo-row-highlight {
-    background-color: #f7e8d7 !important; /* Peach highlight */
-}
+.m { grid-column: 1; text-align: right; padding-right: 4px; }
+.pm { grid-column: 2; text-align: center; }
+.d { grid-column: 3; text-align: left; padding-left: 4px; }
+
+.fgo-row-highlight { background-color: #f7e8d7 !important; }
+.top-border { border-top: 3px solid #183636 !important; }
+.header-group-line { border-bottom: 1.5px solid #183636 !important; }
+.left-align-cell, .left-align-header { text-align: left !important; }
 
 .table-caption-final {
     margin-top: 1.5rem;
     font-size: 1.15rem !important;
     color: #465E87;
     text-align: center;
-    line-height: 1.5;
-    padding: 0 5%;
 }
