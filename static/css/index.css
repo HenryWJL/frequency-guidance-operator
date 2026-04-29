@@ -78,7 +78,7 @@ body {
 
 /* This targets the author names */
 .publication-authors a {
-   color: # !important;
+   color: #FF7500 !important;
 }
 
 /* This adds a nice effect when you hover over the names */
