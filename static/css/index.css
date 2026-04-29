@@ -172,18 +172,52 @@ body {
   overflow: hidden;
 }
 
+.results-carousel video {
+  margin: 0;
+}
+
 /* This targets to carousel borders */
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 2px solid #f39c12; /* Added orange border to highlight results */
+  border: 2px solid #f39c12;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
 }
 
-.results-carousel video {
-  margin: 0;
+/* This targets the arrow buttons on both sides */
+.results-carousel .slider-navigation-previous, 
+.results-carousel .slider-navigation-next {
+    background-color: rgba(24, 62, 62, 0.7) !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+/* Hover state for arrows */
+.results-carousel .slider-navigation-previous:hover, 
+.results-carousel .slider-navigation-next:hover {
+    background-color: #F27100 !important;
+    opacity: 1.0 !important;
+}
+
+/* The actual SVG icons inside the arrows */
+.results-carousel .slider-navigation-previous svg, 
+.results-carousel .slider-navigation-next svg {
+    stroke: white !important;
+}
+
+/* This targets the dots container at the bottom */
+.results-carousel .slider-pagination .slider-page {
+    background-color: #8DA6D2 !important;
+    opacity: 0.5;
+}
+
+/* The active dot (the one currently being viewed) */
+.results-carousel .slider-pagination .slider-page.is-active {
+    background-color: #F27100 !important;
+    opacity: 1.0;
+    transform: scale(1.2);
 }
 
 /* This targets to carousel subcaptions */
