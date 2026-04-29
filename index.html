@@ -171,17 +171,30 @@
         <source src="./static/videos/fgo_illustration.mp4"
                 type="video/mp4">
       </video>
-      <!-- <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2> -->
+      <h2 class="subtitle has-text-centered">
+        <strong style="color: #d35400;">Abstract:</strong> Learning visuomotor policies via
+        behavior cloning typically involves mimicking expert demonstrations collected by
+        human operators. However, natural human demonstrations inherently contain high-frequency noise, such as intermittent
+        jerks, pauses, and action jitter. Training policies to directly imitate these raw
+        trajectories inevitably causes the model to inherit these suboptimal behaviors. This
+        pathology is particularly pronounced in diffusion-based policies, where iterative
+        denoising steps can inadvertently amplify high-frequency artifacts at the expense
+        of meaningful fine-grained details. To address these limitations, we present a novel
+        frequency-based algorithm that enables implicit spectral maneuvering and smooth
+        action generation. Our method, <strong style="color: #d35400;">Frequency Guidance
+        Operator (FGO)</strong>, steers the generation process of diffusion polices by
+        progressively driving the noisy samples through intermediate sub-frequency manifolds with expanding spectral bands.
+        Validated on 13 robotic manipulation tasks from 4 benchmarks, FGO achieves
+        superior performance in enhancing action smoothness and temporal consistency
+        while preserving the fine-grained details necessary for successful task execution.
+        Code, data, and supplementary videos will be made publicly available.
+      </h2>
     </div>
   </div>
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -223,8 +236,10 @@
     </div>
     <!--/ Paper video. -->
   </div>
-</section>
+</section> -->
 
+
+  
 
 <section class="section">
   <div class="container is-max-desktop">
