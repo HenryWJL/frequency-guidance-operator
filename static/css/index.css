@@ -274,3 +274,39 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* This targets the tables */
+.academic-table {
+    background-color: #fdfcf0 !important;
+    border-top: 3px solid #183E3E !important;
+    border-bottom: 3px solid #183E3E !important;
+    font-family: 'Serif', 'Times New Roman', serif;
+}
+
+.academic-table thead th {
+    border-bottom: 1.5px solid #183E3E !important;
+    background-color: #fdfcf0 !important;
+    color: #183E3E !important;
+}
+
+.academic-table td, .academic-table th {
+    background-color: transparent !important;
+    padding: 10px 4px !important;
+    text-align: center;
+}
+
+.fgo-highlight {
+    background-color: rgba(242, 113, 0, 0.15) !important;
+}
+
+.fgo-highlight td {
+    color: #F27100 !important;
+}
+
+.table-caption {
+    margin-top: 1rem;
+    color: #8DA6D2;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
