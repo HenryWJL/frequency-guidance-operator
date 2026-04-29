@@ -281,14 +281,23 @@ body {
     background-color: #fdfcf0 !important;
     border-bottom: 3px solid #8DA6D2 !important;
     font-family: 'Noto Sans', sans-serif;
-    /* font-family: 'Times New Roman', Times, serif; */
+    color: #8DA6D2 !important;
+}
+
+.academic-table th {
+    color: #8DA6D2 !important;
+    background-color: #fdfcf0 !important;
+}
+
+/* Ensure all table data cells (Td) match the blue color */
+.academic-table td {
+    color: #8DA6D2 !important;
 }
 
 .numeric-cell {
     text-align: center !important;
 }
 
-/* THE FIX: Fixed character-width grid */
 .num-wrapper {
     display: inline-grid;
     grid-template-columns: 5.5ch 2ch 5.5ch; /* Rigid widths */
@@ -297,11 +306,13 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Essential for digit alignment */
     font-variant-numeric: tabular-nums;
     font-size: 0.95rem;
+    color: #8DA6D2 !important;
 }
 
 /* Keeps bolding from expanding the container */
 .num-wrapper strong {
-    display: contents; 
+    display: contents;
+    color: #8DA6D2 !important;
 }
 
 .m { grid-column: 1; text-align: right; padding-right: 4px; }
@@ -311,7 +322,11 @@ body {
 .fgo-row-highlight { background-color: #f7e8d7 !important; }
 .top-border { border-top: 3px solid #8DA6D2 !important; }
 .header-group-line { border-bottom: 1.5px solid #8DA6D2 !important; }
-.left-align-cell, .left-align-header { text-align: left !important; }
+.left-align-cell, 
+.left-align-header { 
+    text-align: left !important; 
+    color: #8DA6D2 !important;
+}
 
 /* Prevents header text from wrapping/splitting into two lines */
 /* .left-align-header {
