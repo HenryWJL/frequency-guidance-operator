@@ -82,7 +82,8 @@ body {
 
 /* This targets the author names */
 .publication-authors a {
-   color: #FF7500 !important;
+   /* color: #FF7500 !important; */
+   color: #A9D8B7 !important;
 }
 
 /* This adds a nice effect when you hover over the names */
@@ -94,13 +95,13 @@ body {
 /* This targets the university names (e.g., UPenn) */
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
-    color: #f3bb66 !important;
-    /* color: #e7c579 !important; */
+    /* color: #f3bb66 !important; */
+    color: #7BBFCF !important;
 }
 
 /* This targets the superscripts above the authors (e.g., 1, 2) */
 .publication-authors sup {
-    color: #e7c579;
+    color: #7BBFCF;
 }
 
 .author-block {
