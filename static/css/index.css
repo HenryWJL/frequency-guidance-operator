@@ -358,6 +358,14 @@ body {
     font-weight: 700;
 }
 
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #AAB9D0, rgba(0, 0, 0, 0));
+    margin: 4rem 0;
+    opacity: 0.8;
+}
+
 /* BibTex Styling */
 .bibtex-container {
     background-color: #f7f5e8 !important;
