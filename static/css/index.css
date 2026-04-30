@@ -279,19 +279,19 @@ body {
 /* --- Academic Table Styling --- */
 .academic-table {
     background-color: #fdfcf0 !important;
-    border-bottom: 3px solid #8DA6D2 !important;
+    border-bottom: 3px solid #5A7297 !important;
     font-family: 'Noto Sans', sans-serif;
-    color: #8DA6D2 !important;
+    color: #5A7297 !important;
 }
 
 .academic-table th {
-    color: #8DA6D2 !important;
+    color: #5A7297 !important;
     background-color: #fdfcf0 !important;
 }
 
 /* Ensure all table data cells (Td) match the blue color */
 .academic-table td {
-    color: #8DA6D2 !important;
+    color: #5A7297 !important;
 }
 
 .numeric-cell {
@@ -306,13 +306,13 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Essential for digit alignment */
     font-variant-numeric: tabular-nums;
     font-size: 0.95rem;
-    color: #8DA6D2 !important;
+    color: #5A7297 !important;
 }
 
 /* Keeps bolding from expanding the container */
 .num-wrapper strong {
     display: contents;
-    color: #8DA6D2 !important;
+    color: #5A7297 !important;
 }
 
 .m { grid-column: 1; text-align: right; padding-right: 4px; }
@@ -322,14 +322,14 @@ body {
 .fgo-row-highlight { background-color: #f7e8d7 !important; }
 .fgo-row-highlight td, 
 .fgo-row-highlight strong {
-    color: #8DA6D2 !important;
+    color: #5A7297 !important;
 }
-.top-border { border-top: 3px solid #8DA6D2 !important; }
-.header-group-line { border-bottom: 1.5px solid #8DA6D2 !important; }
+.top-border { border-top: 3px solid #5A7297 !important; }
+.header-group-line { border-bottom: 1.5px solid #5A7297 !important; }
 .left-align-cell, 
 .left-align-header { 
     text-align: left !important; 
-    color: #8DA6D2 !important;
+    color: #5A7297 !important;
 }
 
 /* Prevents header text from wrapping/splitting into two lines */
@@ -342,6 +342,6 @@ body {
 .table-caption-final {
     margin-top: 1.5rem;
     font-size: 1.15rem !important;
-    color: #8DA6D2;
+    color: #5A7297;
     text-align: center;
 }
