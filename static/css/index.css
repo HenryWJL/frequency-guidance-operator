@@ -320,6 +320,10 @@ body {
 .d { grid-column: 3; text-align: left; padding-left: 4px; }
 
 .fgo-row-highlight { background-color: #f7e8d7 !important; }
+.fgo-row-highlight td, 
+.fgo-row-highlight strong {
+    color: #8DA6D2 !important;
+}
 .top-border { border-top: 3px solid #8DA6D2 !important; }
 .header-group-line { border-bottom: 1.5px solid #8DA6D2 !important; }
 .left-align-cell, 
