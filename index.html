@@ -491,67 +491,72 @@
 </section>
 
   
+<section class="section" style="background-color: #fdfcf0;">
+  <div class="container is-max-widescreen">
+    
+    <div class="table-container">
+      <table class="table is-narrow is-fullwidth academic-table">
+        <thead>
+          <tr class="top-border">
+            <th class="left-align-header" style="vertical-align: middle !important;">Algorithms</th>
+            <th class="has-text-centered" style="vertical-align: middle !important;">
+              ATV ↓ (×10<sup>-3</sup> rad/s)
+            </th>
+            <th class="has-text-centered" style="vertical-align: middle !important;">
+              JerkRMS ↓ (rad/s<sup>3</sup>)
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left-align-cell">DP3</td>
+            <td class="numeric-cell">
+              <div class="num-wrapper"><span class="m">14.83</span><span class="pm">±</span><span class="d">0.17</span></div>
+            </td>
+            <td class="numeric-cell">
+              <div class="num-wrapper"><span class="m">50.87</span><span class="pm">±</span><span class="d">1.27</span></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="left-align-cell">DiT-Policy</td>
+            <td class="numeric-cell">
+              <div class="num-wrapper"><span class="m">14.84</span><span class="pm">±</span><span class="d">0.22</span></div>
+            </td>
+            <td class="numeric-cell">
+              <div class="num-wrapper"><span class="m">51.01</span><span class="pm">±</span><span class="d">1.16</span></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="left-align-cell">FreqPolicy</td>
+            <td class="numeric-cell">
+              <div class="num-wrapper"><span class="m">15.25</span><span class="pm">±</span><span class="d">0.39</span></div>
+            </td>
+            <td class="numeric-cell">
+              <div class="num-wrapper"><span class="m">46.91</span><span class="pm">±</span><span class="d">1.58</span></div>
+            </td>
+          </tr>
+          <tr class="fgo-row-highlight">
+            <td class="left-align-cell"><strong>FGO (Ours)</strong></td>
+            <td class="numeric-cell">
+              <div class="num-wrapper">
+                <strong><span class="m">14.76</span><span class="pm">±</span><span class="d">0.17</span></strong>
+              </div>
+            </td>
+            <td class="numeric-cell">
+              <div class="num-wrapper">
+                <strong><span class="m">40.79</span><span class="pm">±</span><span class="d">0.46</span></strong>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-caption-final">
+      <strong>Table 3:</strong> Comparison of ATV and JerkRMS on the Robosuite Can task. Results are computed across 3 training seeds.
+    </p>
 
-<div class="table-container">
-  <table class="table is-narrow is-fullwidth academic-table">
-    <thead>
-      <tr class="top-border">
-        <th class="left-align-header" style="vertical-align: middle !important;">Algorithms</th>
-        <th class="has-text-centered" style="vertical-align: middle !important;">
-          ATV ↓ (×10<sup>-3</sup> rad/s)
-        </th>
-        <th class="has-text-centered" style="vertical-align: middle !important;">
-          JerkRMS ↓ (rad/s<sup>3</sup>)
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="left-align-cell">DP3</td>
-        <td class="numeric-cell">
-          <div class="num-wrapper"><span class="m">14.83</span><span class="pm">±</span><span class="d">0.17</span></div>
-        </td>
-        <td class="numeric-cell">
-          <div class="num-wrapper"><span class="m">50.87</span><span class="pm">±</span><span class="d">1.27</span></div>
-        </td>
-      </tr>
-      <tr>
-        <td class="left-align-cell">DiT-Policy</td>
-        <td class="numeric-cell">
-          <div class="num-wrapper"><span class="m">14.84</span><span class="pm">±</span><span class="d">0.22</span></div>
-        </td>
-        <td class="numeric-cell">
-          <div class="num-wrapper"><span class="m">51.01</span><span class="pm">±</span><span class="d">1.16</span></div>
-        </td>
-      </tr>
-      <tr>
-        <td class="left-align-cell">FreqPolicy</td>
-        <td class="numeric-cell">
-          <div class="num-wrapper"><span class="m">15.25</span><span class="pm">±</span><span class="d">0.39</span></div>
-        </td>
-        <td class="numeric-cell">
-          <div class="num-wrapper"><span class="m">46.91</span><span class="pm">±</span><span class="d">1.58</span></div>
-        </td>
-      </tr>
-      <tr class="fgo-row-highlight">
-        <td class="left-align-cell"><strong>FGO (Ours)</strong></td>
-        <td class="numeric-cell">
-          <div class="num-wrapper">
-            <strong><span class="m">14.76</span><span class="pm">±</span><span class="d">0.17</span></strong>
-          </div>
-        </td>
-        <td class="numeric-cell">
-          <div class="num-wrapper">
-            <strong><span class="m">40.79</span><span class="pm">±</span><span class="d">0.46</span></strong>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<p class="table-caption-final">
-  <strong>Table 3:</strong> Comparison of ATV and JerkRMS on the Robosuite Can task. Results are computed across 3 training seeds.
-</p>
+  </div>
+</section>
   
 
 <hr class="section-divider">  
