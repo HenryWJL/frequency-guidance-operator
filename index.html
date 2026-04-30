@@ -194,15 +194,19 @@
 </section>
 
 
+<hr class="section-divider"> 
+  
 
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
+      
       <div class="has-text-centered">
-        <span class="tag" style="background: #5A7297; color: #ffffff; border-radius: 50px; margin-bottom: 30px; font-weight: 800; font-size: 1.75rem; padding: 1rem 3rem; height: auto; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <span class="tag" style="background: #5A7297; color: #ffffff; border-radius: 50px; margin-bottom: 25px; font-weight: 700; font-size: 1.4rem; padding: 0.75rem 2.2rem; height: auto; letter-spacing: 0.5px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">
           Simulated Environments & Tasks
         </span>
       </div>
+      
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-robosuite-lift">
           <!-- <p class="has-text-centered is-size-6 carousel-subcaption">
@@ -334,10 +338,10 @@
   <div class="container is-max-widescreen">
     
     <div class="has-text-centered">
-        <span class="tag" style="background: #5A7297; color: #ffffff; border-radius: 50px; margin-bottom: 30px; font-weight: 800; font-size: 1.75rem; padding: 1rem 3rem; height: auto; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-          Benchmark Results
-        </span>
-      </div>
+      <span class="tag" style="background: #5A7297; color: #ffffff; border-radius: 50px; margin-bottom: 25px; font-weight: 700; font-size: 1.4rem; padding: 0.75rem 2.2rem; height: auto; letter-spacing: 0.5px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);">
+        Benchmark Results
+      </span>
+    </div>
     
     <div class="table-container">
       <table class="table is-narrow is-fullwidth academic-table">
@@ -486,8 +490,73 @@
   </div>
 </section>
 
+  
+
+<div class="table-container">
+  <table class="table is-narrow is-fullwidth academic-table">
+    <thead>
+      <tr class="top-border">
+        <th class="left-align-header" style="vertical-align: middle !important;">Algorithms</th>
+        <th class="has-text-centered" style="vertical-align: middle !important;">
+          ATV ↓ (×10<sup>-3</sup> rad/s)
+        </th>
+        <th class="has-text-centered" style="vertical-align: middle !important;">
+          JerkRMS ↓ (rad/s<sup>3</sup>)
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="left-align-cell">DP3</td>
+        <td class="numeric-cell">
+          <div class="num-wrapper"><span class="m">14.83</span><span class="pm">±</span><span class="d">0.17</span></div>
+        </td>
+        <td class="numeric-cell">
+          <div class="num-wrapper"><span class="m">50.87</span><span class="pm">±</span><span class="d">1.27</span></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="left-align-cell">DiT-Policy</td>
+        <td class="numeric-cell">
+          <div class="num-wrapper"><span class="m">14.84</span><span class="pm">±</span><span class="d">0.22</span></div>
+        </td>
+        <td class="numeric-cell">
+          <div class="num-wrapper"><span class="m">51.01</span><span class="pm">±</span><span class="d">1.16</span></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="left-align-cell">FreqPolicy</td>
+        <td class="numeric-cell">
+          <div class="num-wrapper"><span class="m">15.25</span><span class="pm">±</span><span class="d">0.39</span></div>
+        </td>
+        <td class="numeric-cell">
+          <div class="num-wrapper"><span class="m">46.91</span><span class="pm">±</span><span class="d">1.58</span></div>
+        </td>
+      </tr>
+      <tr class="fgo-row-highlight">
+        <td class="left-align-cell"><strong>FGO (Ours)</strong></td>
+        <td class="numeric-cell">
+          <div class="num-wrapper">
+            <strong><span class="m">14.76</span><span class="pm">±</span><span class="d">0.17</span></strong>
+          </div>
+        </td>
+        <td class="numeric-cell">
+          <div class="num-wrapper">
+            <strong><span class="m">40.79</span><span class="pm">±</span><span class="d">0.46</span></strong>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p class="table-caption-final">
+  <strong>Table 3:</strong> Comparison of ATV and JerkRMS on the Robosuite Can task. Results are computed across 3 training seeds.
+</p>
+  
+
 <hr class="section-divider">  
 
+  
 <section class="section" id="BibTeX">
   <div class="container is-max-widescreen content">
     <h2 class="title" style="color: #5A7297;">BibTex</h2> <pre><code>@article{wang2026fgo,
