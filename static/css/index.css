@@ -353,7 +353,12 @@ body {
     text-align: center;
 }
 
+.table-caption-final strong {
+    color: #465E87 !important;
+    font-weight: 700;
+}
 
+/* BibTex Styling */
 .bibtex-container {
     background-color: #f7f5e8 !important;
     border-left: 5px solid #AAB9D0 !important;
