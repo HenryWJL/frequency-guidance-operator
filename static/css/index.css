@@ -352,3 +352,14 @@ body {
     color: #5A7297;
     text-align: center;
 }
+
+
+.bibtex-container {
+    background-color: #f7f5e8 !important;
+    border-left: 5px solid #AAB9D0 !important;
+    color: #5A7297 !important;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+}
