@@ -389,3 +389,16 @@ body {
     font-size: 0.9rem;
     overflow-x: auto;
 }
+
+.bibtex-container code, 
+.bibtex-container pre {
+    color: #5A7297 !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bibtex-container .hljs,
+.bibtex-container .hljs-keyword,
+.bibtex-container .hljs-string,
+.bibtex-container .hljs-title {
+    color: #5A7297 !important;
+}
