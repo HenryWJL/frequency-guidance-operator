@@ -566,7 +566,7 @@
         </span>
       </div>
 
-      <div class="columns is-centered">
+      <!-- <div class="columns is-centered">
         <div class="column">
           <div class="content">
             <h2 class="title is-3">Cup</h2>
@@ -586,8 +586,42 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Cup</h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cup.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Mouse</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/mouse.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -606,10 +640,12 @@
       document.addEventListener('DOMContentLoaded', function() {
         const ctx = document.getElementById('successRateChart').getContext('2d');
         
-        // Academic font settings to match LaTeX
+        // Academic font settings
         Chart.defaults.font.family = "'Times New Roman', Times, serif";
         Chart.defaults.font.size = 18;
-        Chart.defaults.color = '#000000';
+        
+        // Global color set to your requested blue
+        Chart.defaults.color = '#6B89BC'; 
 
         new Chart(ctx, {
           type: 'bar',
@@ -618,18 +654,16 @@
             datasets: [
               {
                 label: 'DP3',
-                // Extrapolated values from the image
                 data: [84, 48], 
-                backgroundColor: '#d3d3d3', // Light Grey
+                backgroundColor: '#d3d3d3', 
                 borderWidth: 0,
                 barPercentage: 0.7,
                 categoryPercentage: 0.6
               },
               {
                 label: 'FGO (Ours)',
-                // Extrapolated values from the image
                 data: [96, 56], 
-                backgroundColor: '#fba75f', // Light Orange/Peach
+                backgroundColor: '#fba75f', 
                 borderWidth: 0,
                 barPercentage: 0.7,
                 categoryPercentage: 0.6
@@ -643,6 +677,7 @@
                 position: 'top',
                 align: 'end',
                 labels: {
+                  color: '#6B89BC', // Legend text color
                   boxWidth: 20,
                   useBorderRadius: true,
                   borderRadius: 2,
@@ -662,36 +697,38 @@
             scales: {
               y: {
                 beginAtZero: true,
-                max: 110, // Gives a little breathing room at the top
+                max: 110, // Explicitly capped at 110
                 title: {
                   display: true,
                   text: 'Success Rate (%)',
+                  color: '#6B89BC', // Y-axis title color
                   font: {
                     size: 20
                   }
                 },
                 ticks: {
+                  color: '#6B89BC', // Y-axis numbers color
                   stepSize: 20
                 },
                 grid: {
                   color: 'rgba(0, 0, 0, 0.1)',
-                  borderDash: [5, 5], // Creates the dashed lines seen in your image
+                  borderDash: [5, 5], 
                   drawBorder: true
                 }
               },
               x: {
                 grid: {
-                  display: false, // Hides vertical grid lines for a cleaner look
+                  display: false, 
                   drawBorder: true
                 },
                 ticks: {
+                  color: '#6B89BC', // X-axis labels color
                   font: {
                     size: 22
                   }
                 }
               }
             },
-            // Makes the axes lines solid black
             layout: {
               padding: {
                 top: 20
@@ -705,7 +742,7 @@
   </div>
 </section>
   
-
+  
 <hr class="section-divider">
 
   
