@@ -184,6 +184,47 @@ body {
     border-radius: 6px;
 }
 
+.videos-side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Space between the two videos */
+    width: 100%;
+    margin-top: 25px;
+}
+
+.video-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(170, 185, 208, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Individual labels below each video */
+.video-label {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5A7297 !important;
+    text-align: center;
+}
+
+/* Responsive adjustment for tablets and smartphones */
+@media (max-width: 768px) {
+    .videos-side-by-side {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
 .video-caption-justified {
     text-align: justify;
     text-justify: inter-word; /* Ensures even spacing between words */
