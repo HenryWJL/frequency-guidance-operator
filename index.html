@@ -566,12 +566,12 @@
         </span>
       </div>
 
-      <!-- <div class="columns is-centered">
+      <div class="columns is-centered">
         <div class="column">
           <div class="content">
             <h2 class="title is-3">Cup</h2>
             <video id="realworld-cup" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/cup.mp4" type="video/mp4">
+              <source src="./static/videos/task-demos/cup.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -581,19 +581,19 @@
           <div class="columns is-centered">
             <div class="column content">
               <video id="realworld-mouse" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/mouse.mp4" type="video/mp4">
+                <source src="./static/videos/task-demos/mouse.mp4" type="video/mp4">
               </video>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       
     </div>
   </div>
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -602,7 +602,7 @@
         <div class="content">
           <h2 class="title is-3">Cup</h2>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cup.mp4"
+            <source src="./static/videos/task-demos/cup.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -610,12 +610,12 @@
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+     <!-- <div class="column">
         <h2 class="title is-3">Mouse</h2>
         <div class="columns is-centered">
           <div class="column content">
             <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/mouse.mp4"
+              <source src="./static/videos/task-demos/mouse.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -624,7 +624,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -677,7 +677,7 @@
                 position: 'top',
                 align: 'end',
                 labels: {
-                  color: '#6B89BC', // Legend text color
+                  color: '#6B89BC',
                   boxWidth: 20,
                   useBorderRadius: true,
                   borderRadius: 2,
@@ -697,17 +697,17 @@
             scales: {
               y: {
                 beginAtZero: true,
-                max: 110, // Explicitly capped at 110
+                max: 100, // CHANGED: Now caps exactly at 100
                 title: {
                   display: true,
                   text: 'Success Rate (%)',
-                  color: '#6B89BC', // Y-axis title color
+                  color: '#6B89BC',
                   font: {
-                    size: 20
+                    size: 22 // CHANGED: Increased to 22 to match the x-axis labels
                   }
                 },
                 ticks: {
-                  color: '#6B89BC', // Y-axis numbers color
+                  color: '#6B89BC',
                   stepSize: 20
                 },
                 grid: {
@@ -722,9 +722,9 @@
                   drawBorder: true
                 },
                 ticks: {
-                  color: '#6B89BC', // X-axis labels color
+                  color: '#6B89BC',
                   font: {
-                    size: 22
+                    size: 22 
                   }
                 }
               }
