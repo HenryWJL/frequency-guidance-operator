@@ -601,6 +601,119 @@
 </section>
 
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<section class="section" style="background-color: #fdfcf0;">
+  <div class="container is-max-desktop">
+    
+    <div style="position: relative; width: 100%; max-width: 600px; margin: 0 auto;">
+      <canvas id="successRateChart"></canvas>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('successRateChart').getContext('2d');
+        
+        // Academic font settings to match LaTeX
+        Chart.defaults.font.family = "'Times New Roman', Times, serif";
+        Chart.defaults.font.size = 18;
+        Chart.defaults.color = '#000000';
+
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Cup', 'Mouse'],
+            datasets: [
+              {
+                label: 'DP3',
+                // Extrapolated values from the image
+                data: [84, 48], 
+                backgroundColor: '#d3d3d3', // Light Grey
+                borderWidth: 0,
+                barPercentage: 0.7,
+                categoryPercentage: 0.6
+              },
+              {
+                label: 'FGO (Ours)',
+                // Extrapolated values from the image
+                data: [96, 56], 
+                backgroundColor: '#fba75f', // Light Orange/Peach
+                borderWidth: 0,
+                barPercentage: 0.7,
+                categoryPercentage: 0.6
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+                align: 'end',
+                labels: {
+                  boxWidth: 20,
+                  useBorderRadius: true,
+                  borderRadius: 2,
+                  font: {
+                    size: 16
+                  }
+                }
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(context) {
+                    return context.dataset.label + ': ' + context.raw + '%';
+                  }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 110, // Gives a little breathing room at the top
+                title: {
+                  display: true,
+                  text: 'Success Rate (%)',
+                  font: {
+                    size: 20
+                  }
+                },
+                ticks: {
+                  stepSize: 20
+                },
+                grid: {
+                  color: 'rgba(0, 0, 0, 0.1)',
+                  borderDash: [5, 5], // Creates the dashed lines seen in your image
+                  drawBorder: true
+                }
+              },
+              x: {
+                grid: {
+                  display: false, // Hides vertical grid lines for a cleaner look
+                  drawBorder: true
+                },
+                ticks: {
+                  font: {
+                    size: 22
+                  }
+                }
+              }
+            },
+            // Makes the axes lines solid black
+            layout: {
+              padding: {
+                top: 20
+              }
+            }
+          }
+        });
+      });
+    </script>
+    
+  </div>
+</section>
+  
+
 <hr class="section-divider">
 
   
