@@ -640,12 +640,9 @@
       document.addEventListener('DOMContentLoaded', function() {
         const ctx = document.getElementById('successRateChart').getContext('2d');
         
-        // Academic font settings
         Chart.defaults.font.family = "'Times New Roman', Times, serif";
         Chart.defaults.font.size = 18;
-        
-        // Global color set to your requested blue
-        Chart.defaults.color = '#6B89BC'; 
+        Chart.defaults.color = '#465E87'; 
 
         new Chart(ctx, {
           type: 'bar',
@@ -677,7 +674,7 @@
                 position: 'top',
                 align: 'end',
                 labels: {
-                  color: '#6B89BC',
+                  color: '#465E87',
                   boxWidth: 20,
                   useBorderRadius: true,
                   borderRadius: 2,
@@ -697,17 +694,17 @@
             scales: {
               y: {
                 beginAtZero: true,
-                max: 100, // CHANGED: Now caps exactly at 100
+                max: 100,
                 title: {
                   display: true,
                   text: 'Success Rate (%)',
-                  color: '#6B89BC',
+                  color: '#465E87',
                   font: {
-                    size: 22 // CHANGED: Increased to 22 to match the x-axis labels
+                    size: 22
                   }
                 },
                 ticks: {
-                  color: '#6B89BC',
+                  color: '#465E87',
                   stepSize: 20
                 },
                 grid: {
@@ -722,7 +719,7 @@
                   drawBorder: true
                 },
                 ticks: {
-                  color: '#6B89BC',
+                  color: '#465E87',
                   font: {
                     size: 22 
                   }
