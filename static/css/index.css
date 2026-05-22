@@ -167,21 +167,23 @@ body {
     height: 100%;
 }
 
-.image-full-limits {
+.image-bounded-limits {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px auto 25px auto;
 }
 
-.image-full-limits img {
+.image-bounded-limits img {
+    display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
-    image-rendering: -webkit-optimize-contrast; 
-    border: 1px solid rgba(170, 185, 208, 0.2);
+    border: 1px solid rgba(170, 185, 208, 0.3);
     border-radius: 6px;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .videos-side-by-side {
