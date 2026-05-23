@@ -640,6 +640,25 @@
           },
           options: {
             responsive: true,
+            
+            animation: {
+              y: {
+                duration: 800, // How long each bar takes to rise (in milliseconds)
+                easing: 'easeOutQuart' // Gives it a smooth deceleration at the top
+              },
+              delay: (context) => {
+                let delay = 0;
+                // Only apply the delay to the actual data bars (not the axes or legend)
+                if (context.type === 'data' && context.mode === 'default') {
+                  // Stagger the animation: 
+                  // 300ms delay between 'Cup' and 'Mouse'
+                  // 150ms delay between 'DP3' and 'FGO' within each task
+                  delay = context.dataIndex * 300 + context.datasetIndex * 150;
+                }
+                return delay;
+              }
+            },
+
             plugins: {
               legend: {
                 position: 'top',
@@ -649,9 +668,7 @@
                   boxWidth: 20,
                   useBorderRadius: true,
                   borderRadius: 2,
-                  font: {
-                    size: 16
-                  }
+                  font: { size: 16 }
                 }
               },
               tooltip: {
@@ -670,9 +687,7 @@
                   display: true,
                   text: 'Success Rate (%)',
                   color: '#465E87',
-                  font: {
-                    size: 22
-                  }
+                  font: { size: 22 }
                 },
                 ticks: {
                   color: '#465E87',
@@ -691,16 +706,12 @@
                 },
                 ticks: {
                   color: '#465E87',
-                  font: {
-                    size: 22 
-                  }
+                  font: { size: 22 }
                 }
               }
             },
             layout: {
-              padding: {
-                top: 20
-              }
+              padding: { top: 20 }
             }
           }
         });
