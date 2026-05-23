@@ -615,14 +615,18 @@
         Chart.defaults.font.size = 18;
         Chart.defaults.color = '#465E87'; 
 
-        new Chart(ctx, {
+        // Store your real data in variables so we can reuse them in the loop
+        const dataDP3 = [84, 48];
+        const dataFGO = [96, 56];
+
+        const chart = new Chart(ctx, {
           type: 'bar',
           data: {
             labels: ['Cup', 'Mouse'],
             datasets: [
               {
                 label: 'DP3',
-                data: [84, 48], 
+                data: [...dataDP3], 
                 backgroundColor: '#d3d3d3', 
                 borderWidth: 0,
                 barPercentage: 0.7,
@@ -630,7 +634,7 @@
               },
               {
                 label: 'FGO (Ours)',
-                data: [96, 56], 
+                data: [...dataFGO], 
                 backgroundColor: '#fba75f', 
                 borderWidth: 0,
                 barPercentage: 0.7,
@@ -641,18 +645,15 @@
           options: {
             responsive: true,
             
+            // The staggered animation block
             animation: {
               y: {
-                duration: 800, // How long each bar takes to rise (in milliseconds)
-                easing: 'easeOutQuart' // Gives it a smooth deceleration at the top
+                duration: 800, 
+                easing: 'easeOutQuart'
               },
               delay: (context) => {
                 let delay = 0;
-                // Only apply the delay to the actual data bars (not the axes or legend)
                 if (context.type === 'data' && context.mode === 'default') {
-                  // Stagger the animation: 
-                  // 300ms delay between 'Cup' and 'Mouse'
-                  // 150ms delay between 'DP3' and 'FGO' within each task
                   delay = context.dataIndex * 300 + context.datasetIndex * 150;
                 }
                 return delay;
@@ -715,6 +716,23 @@
             }
           }
         });
+
+        // --- The Repeating Loop Logic ---
+        setInterval(() => {
+          // Step 1: Instantly drop the bars to 0 without animating
+          chart.data.datasets[0].data = [0, 0];
+          chart.data.datasets[1].data = [0, 0];
+          chart.update('none'); 
+
+          // Step 2: Wait 50 milliseconds (so the browser registers the 0 state), 
+          // then put the real data back and trigger the standard animation
+          setTimeout(() => {
+            chart.data.datasets[0].data = [...dataDP3];
+            chart.data.datasets[1].data = [...dataFGO];
+            chart.update(); 
+          }, 50);
+        }, 5000); 
+
       });
     </script>
     
